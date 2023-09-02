@@ -12,7 +12,7 @@ for FILE in $S_DIR/*.*; do
 	R_BSH=$(if [[ "$FILE" =~ ^(.+\.sh|.+\.bash|.+\.run|.+\.zsh|.+\.py|.+\.js)$ ]]; then echo 'Script_Files'; fi)
 	R_CBZ=$(if [[ "$FILE" =~ ^(.+\.cbz|.+\.cbr|.+\.cb7)$ ]]; then echo 'Comic_Files'; fi)
 	REGEX_STRINGS=($R_IMG $R_ZIP $R_DOC $R_AUD $R_VID $R_BSH $R_CBZ)
-	F_DATE=$(stat --format=%z "$FILE")
+	F_DATE=$(stat --format=%y "$FILE")
 	F_DAY=${F_DATE:0:10}
 	F_TYPE=$(for SEARCH in ${REGEX_STRINGS[@]}; do echo $SEARCH; done)
 	if [[ $F_TYPE == "" ]]; then F_TYPE='Unknown_Files'; fi
