@@ -1,2 +1,2 @@
 # standalone-scripts
-Just a bunch of small scirpts I wrote for misc use.
+Just a bunch of small scripts I wrote for misc use.
