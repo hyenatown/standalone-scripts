@@ -1,5 +1,5 @@
 #!/bin/bash
-# Written by HT
+# Written by hyenatown
 if [ -x $HOME/Downloads ]; then
 S_DIR=$HOME/Downloads
 mkdir -p $S_DIR/Image_Files $S_DIR/Compressed_Files $S_DIR/Document_Files $S_DIR/Audio_Files $S_DIR/Video_Files $S_DIR/Script_Files $S_DIR/Comic_Files $S_DIR/Unknown_Files
