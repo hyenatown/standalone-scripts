@@ -5,11 +5,8 @@
 # I don't know the limits of doing this, but have at it (and let me know what happens).
 if [ -x $HOME/Downloads ]; then
 S_DIR=$HOME/Downloads
-mkdir -p \
-$S_DIR/Image_Files $S_DIR/Compressed_Files \   #i didn't need to do split the line like this
-$S_DIR/Document_Files $S_DIR/Audio_Files \     #but i didn't like how wide this script looked
-$S_DIR/Video_Files $S_DIR/Script_Files \       #simply add a new folder with "$S_DIR/path/to/"
-$S_DIR/Comic_Files $S_DIR/Unknown_Files        #and be sure to create a matching regex expression
+mkdir -p $S_DIR/Image_Files $S_DIR/Compressed_Files $S_DIR/Document_Files $S_DIR/Audio_Files $S_DIR/Video_Files $S_DIR/Script_Files $S_DIR/Comic_Files $S_DIR/Unknown_Files
+#simply add a new folder with "$S_DIR/path/to/" and be sure to create a matching regex expression
 for FILE in $S_DIR/*.*; do
     R_IMG=$(if [[ "$FILE" =~ ^(.+\.jpg|.+\.png|.+\.gif|.+\.jpeg|.+\.apng|.+\.webp|.+\.tga|.+\.jxl)$ ]]; then echo 'Image_Files'; fi)
     R_ZIP=$(if [[ "$FILE" =~ ^(.+\.zip|.+\.7z|.+\.rar|.+\.gz|.+\.tar|.+\.xz)$ ]]; then echo 'Compressed_Files'; fi)
