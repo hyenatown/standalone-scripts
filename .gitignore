@@ -1,5 +1,5 @@
-
 *.sh~
 *.un~
 *.swp
 .directory
+*-swp
