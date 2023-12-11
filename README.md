@@ -3,4 +3,4 @@
 Just a bunch of small scripts I wrote for misc use.
 
 Credits:
-emma essex for the original "kapi.bat"
+- emma essex for the original "kapi.bat"
