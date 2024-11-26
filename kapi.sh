@@ -1,5 +1,5 @@
 #!/bin/sh
-# original "kapi.bat" by emma essex
+# original "kapi.bat" by em essex
 menu(){
     echo "          //__//"
     echo "   i'm   /   -   \______________ "
